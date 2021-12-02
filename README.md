@@ -1,2 +1,21 @@
-# fishyue_vue_Plugin
-vue框架学习，Vuex、axios、promise、IView、Element-ui，模块化开发、vue基础语法：router、component及子父组件传参、slot、ref、props
+# y
+
+> y
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
