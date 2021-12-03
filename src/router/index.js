@@ -15,6 +15,9 @@ import TwoWayBinding from '@/View/TwoWayBinding'
 import  elcontainer from '@/View/elcontainers'
 import routers from '@/View/routers'
 
+import  batchapply from '@/View/batchapply'
+
+
 
 import applyform from '@/View/applyform.vue'
 
@@ -27,7 +30,7 @@ Vue.use(iView);
 Vue.use(Router)
 
 export default new Router({
-
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -83,6 +86,11 @@ export default new Router({
      {
       path:'/TwoWayBinding',
       component:TwoWayBinding
+    },
+
+    {
+      path:'/batchapply',
+      component:batchapply
     }
 
 

@@ -1,8 +1,7 @@
 <template>
   <div>
+     <loading v-show="true"></loading>
 
-     <Icon type="airplane-outline"></Icon>
-    <ion-icon name="airplane-outline"></ion-icon>
     <input type='button' @click="show_my_value()" value=button/>
     <input type='button' @click="say_hi('Jim')" value=直接传参数/>
     <input type='button' v-on:click="say_hi('v-on')" value='v-on'/>
