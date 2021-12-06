@@ -21,6 +21,11 @@ import  batchapply from '@/View/batchapply'
 
 import applyform from '@/View/applyform.vue'
 
+import  dynamic from '@/View/dynamic'
+
+
+import childslot from '@/View/childslot'
+
 
 import iView from 'iview';
 import 'iview/dist/styles/iview.css'  //iview的样式文件，必须引入
@@ -92,7 +97,13 @@ export default new Router({
       path:'/batchapply',
       component:batchapply
     }
-
+,   {
+  path:'/childslot',
+  component:childslot
+},   {
+  path:'/dynamic',
+  component:dynamic
+}
 
 
   ]
