@@ -1,0 +1,67 @@
+1 package org. open. java;
+
+2
+
+3/**
+
+4*任务1
+
+5 * @author chenjunfeng02
+
+6 *
+
+7 */
+
+8 public class FinalExam1 {
+
+9 private float waterPrice = 3.0f; //矿泉水
+
+10 private float breadPrice = 3.5f; //面包
+
+11 private float icecreamPrice = 2.5f; //冰棍.
+
+12 private float fastFoodPrice = 4.5f; //方便面
+
+13 private float cocaColaPrice = 3.5f; //瓶装可乐
+
+14
+
+15 public FinalExam1() {
+
+16
+
+17 }
+
+18
+
+19 /**
+
+20 *计算购物的总价格
+
+21 *
+
+22 * @param water矿泉水的数量
+
+23 * @param bread 面包的数量
+
+24 * @param icecream 冰棍的数量
+
+25 *@return
+
+26 */
+
+27 public float calcPriceByXiaoMing(int waterNum, int breadNum, int cocaColaNum) {
+
+28 System. out. println("==========小明购买的产品列表===============");
+
+29 System. out.println("矿泉水: " + waterNum);
+
+30 System. out.printIn("面包:" + breadNum) ;
+
+31 System. out.printIn("瓶装可乐:" + cocaColaNum) ;
+
+32
+
+33 float totalPrice = waterNum * waterPrice +
+
+34 breadNum * breadPrice + cocaColaNum * this. cocaColaPrice;
