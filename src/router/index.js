@@ -12,99 +12,117 @@ import element from '@/View/element'
 import TwoWayBinding from '@/View/TwoWayBinding'
 
 
-import  elcontainer from '@/View/elcontainers'
+import elcontainer from '@/View/elcontainers'
 import routers from '@/View/routers'
 
-import  batchapply from '@/View/batchapply'
+import batchapply from '@/View/batchapply'
 
 
 
 import applyform from '@/View/applyform.vue'
 
-import  dynamic from '@/View/dynamic'
+import dynamic from '@/View/dynamic'
 
 
 import childslot from '@/View/childslot'
 
+import fatherslot from '@/View/fatherslot'
+import table from '@/View/table'
+
+import tablepre from '@/View/tablepre'
+
+
 
 import iView from 'iview';
-import 'iview/dist/styles/iview.css'  //iview的样式文件，必须引入
+import 'iview/dist/styles/iview.css' //iview的样式文件，必须引入
 Vue.use(iView);
 
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/TEST',
-      name: 'TEST',
-      component: TEST
-    },
-    {
-      path: '/vuex',
-      name: 'vuex',
-      component: vuexs
-    },
-    {
-      path: '/event',
-      name: 'event',
-      component: event
-    },
-    {
-      path: '/fors',
-      name: 'fors',
-      component: fors
-    },  {
-      path: '/blog',
-      name: 'Blog',
-      component: Blog
-    },
-    {
-      path: '/applyform',
-      name: 'applyform',
-      component: () => import('@/View/applyform.vue')
-    },
-    {
-     path:'/element',
-     name:'element',
-     component:element
+    mode: 'history',
+    routes: [{
+            path: '/',
+            name: 'HelloWorld',
+            component: HelloWorld
+        },
+        {
+            path: '/TEST',
+            name: 'TEST',
+            component: TEST
+        },
+        {
+            path: '/vuex',
+            name: 'vuex',
+            component: vuexs
+        },
+        {
+            path: '/event',
+            name: 'event',
+            component: event
+        },
+        {
+            path: '/fors',
+            name: 'fors',
+            component: fors
+        }, {
+            path: '/blog',
+            name: 'Blog',
+            component: Blog
+        },
+        {
+            path: '/applyform',
+            name: 'applyform',
+            component: () =>
+                import ('@/View/applyform.vue')
+        },
+        {
+            path: '/element',
+            name: 'element',
+            component: element
 
-    },
-    {
-      path:'/elcontainer',
-      name:'elcontainer',
-      component:elcontainer
+        },
+        {
+            path: '/elcontainer',
+            name: 'elcontainer',
+            component: elcontainer
 
-     },
+        },
 
-     {
-       path:'/routers/:BwfQueryid',
-       component:routers
-     },
-     {
-      path:'/TwoWayBinding',
-      component:TwoWayBinding
-    },
+        {
+            path: '/routers/:BwfQueryid',
+            component: routers
+        },
+        {
+            path: '/TwoWayBinding',
+            component: TwoWayBinding
+        },
 
-    {
-      path:'/batchapply',
-      component:batchapply
-    }
-,   {
-  path:'/childslot',
-  component:childslot
-},   {
-  path:'/dynamic',
-  component:dynamic
-}
+        {
+            path: '/batchapply',
+            component: batchapply
+        }, {
+            path: '/childslot',
+            component: childslot
+        },
+        {
+            path: '/dynamic',
+            component: dynamic
+        },
+        {
+            path: '/table',
+            component: table
+        },
+        {
+            path: '/tablepre',
+            component: tablepre
+        }, {
+            path: '/fatherslot',
+            component: fatherslot
+        }
 
 
-  ]
+
+    ]
 })
