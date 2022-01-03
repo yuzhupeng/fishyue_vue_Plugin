@@ -10,26 +10,24 @@ import Blog from '@/View/Blog'
 
 import element from '@/View/element'
 import TwoWayBinding from '@/View/TwoWayBinding'
-
-
 import elcontainer from '@/View/elcontainers'
 import routers from '@/View/routers'
-
 import batchapply from '@/View/batchapply'
-
-
-
 import applyform from '@/View/applyform.vue'
-
 import dynamic from '@/View/dynamic'
-
-
 import childslot from '@/View/childslot'
-
 import fatherslot from '@/View/fatherslot'
 import table from '@/View/table'
-
 import tablepre from '@/View/tablepre'
+
+import childs from '@/View/chuanzhi/child'
+import fathers from '@/View/chuanzhi/father'
+import Acomponent from '@/View/chuanzhi/Acomponent'
+import provideA from '@/View/chuanzhi/provideA'
+import eventBusA from '@/View/chuanzhi/eventBusA'
+import ShowMessage from '@/View/chuanzhi/ShowMessage'
+
+
 
 
 
@@ -120,6 +118,25 @@ export default new Router({
         }, {
             path: '/fatherslot',
             component: fatherslot
+        },
+        {
+            path: '/childs',
+            component: childs
+        }, {
+            path: '/fathers',
+            component: fathers
+        }, {
+            path: '/Acomponent',
+            component: Acomponent
+        }, {
+            path: '/provideA',
+            component: provideA
+        }, {
+            path: '/eventBusA',
+            component: eventBusA
+        }, {
+            path: '/ShowMessage',
+            component: ShowMessage
         }
 
 

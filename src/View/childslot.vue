@@ -30,6 +30,7 @@ export default {
   },
 
   created () {
+    console.log(1239999)
     console.log(this.todo, 'todo')
   }
 }

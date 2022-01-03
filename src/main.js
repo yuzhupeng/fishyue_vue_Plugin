@@ -14,11 +14,16 @@ Vue.use(ElementUI)
 Vue.config.productionTip = false
 Vue.use(iView)
 
+
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  store,
-  components: { App },
-  template: '<App/>'
+    beforeCreate() {
+        // 设置事件总线
+        Vue.prototype.$bus = this
+    },
+    el: '#app',
+    router,
+    store,
+    components: { App },
+    template: '<App/>'
 })
