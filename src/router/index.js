@@ -28,7 +28,15 @@ import eventBusA from '@/View/chuanzhi/eventBusA'
 import ShowMessage from '@/View/chuanzhi/ShowMessage'
 
 
+import personalview from '@/View/personalview'
 
+
+import linechart from '@/View/linechart'
+
+
+
+import login1 from '@/View/login1'
+import login2 from '@/View/login2'
 
 
 import iView from 'iview';
@@ -137,7 +145,28 @@ export default new Router({
         }, {
             path: '/ShowMessage',
             component: ShowMessage
-        }
+        },
+        {
+            path: '/login1',
+            component: login1
+        }, {
+            path: '/login2',
+            component: login2
+        },
+        // {
+        //     path: '/linechart',
+        //     component: linechart
+
+        // },
+        {
+            path: '/personalview',
+            component: personalview
+        },
+        {
+            path: '/vuesync',
+            component: vuesync
+        },
+
 
 
 
